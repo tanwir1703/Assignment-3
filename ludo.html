@@ -1,0 +1,88 @@
+  
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ludo Game-Play</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link rel="icon" href="1.png">
+    <script src="jquery-3.5.0.min.js"></script>   
+    <script src="text.js"></script>
+</head>
+
+<body id="prince" style="
+margin-top: 0px;
+margin-left: 0px;
+margin-bottom: 0px;
+margin-right: 0px;">
+
+<audio autoplay>
+    <source src="Spectre.mp3" type="audio/mp3">
+</audio>
+
+<div class="page">
+
+    <div class="lockA">
+    <div class="textA">Locker For A</div>    
+    <div class="A1"><div class="pawns" id="redpawn1" onclick="randomMove('red',1)" style="background-color: rgb(190, 6, 6);box-shadow: inset 0 -4px 3px rgb(0, 0, 0, 0.2), inset 0 4px 3px rgba(255, 255, 255, 0.5); border: 0.5vh solid white; left:11.0vw; top: 32.25vh;"></div></div>
+    <div class="A2"><div class="pawns" id="redpawn2" onclick="randomMove('red',2)" style="background-color: rgb(190, 6, 6);box-shadow: inset 0 -4px 3px rgb(0, 0, 0, 0.2), inset 0 4px 3px rgba(255, 255, 255, 0.5); border: 0.5vh solid white; left:11.0vw; top: 42.25vh;"></div></div>    
+</div>
+      
+    <div class="grid-container">
+        <div class="item1" style="background-color: #f74747;"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>  
+        <div class="item4"></div>
+        <div class="item5"></div>
+        <div class="item6"></div>
+        <div class="item7"></div>
+        <div class="item8"></div>  
+        <div class="item28" style="background-color: #fa7c7c;">EXIT</div>
+        <div class="item9"></div>
+        <div class="item27"></div>
+        <div class="item10"></div> 
+        <div class="item26"></div>
+        <div class="item11"></div>
+        <div class="item25"></div>     
+        <div class="item12"></div>
+        <div class="item24"></div>
+        <div class="item13"></div>  
+        <div class="item23"></div>
+        <div class="item29">
+            <div id="texts" style="font-family: Verdana; font-size: 2vh; float: left !important; padding: 0px !important; position: relative;"><h4 id="uselesstext1">It`s </h4><h3 id="player" style="float:left; color:red">red</h3><h4 id="uselesstext2" style="font-size: 2vh">'s turn</h4></div>
+            <div id="dice" onclick="randomNum()" style="background-image: url(giphy.gif); background-size:cover; background-position:center; width:14.8vw;height:30vh; float:center"></div>
+            <div id="secret"><p id="badtext" style="float:left !important; font-size: 2vh; font-family: verdana;"></p></div>  
+        </div>
+        <div class="item14" style="background-color: #6196f8;">EXIT</div>
+        <div class="item22"></div>
+        <div class="item21"></div>  
+        <div class="item20"></div>
+        <div class="item19"></div>
+        <div class="item18"></div>
+        <div class="item17"></div>
+        <div class="item16"></div>
+        <div class="item15" style="background-color: #2d73f7;"></div>
+      </div>
+      
+      <div class="lockB">
+        <div class="textA">Locker For B</div> 
+        <div class="B1"><div class="pawns" id="bluepawn1" onclick="randomMove('blue',1)" style="background-color: rgb(2, 2, 161);box-shadow: inset 0 -4px 3px rgb(0, 0, 0, 0.2), inset 0 4px 3px rgba(255, 255, 255, 0.5); border: 0.5vh solid white; left:86.0vw; top: 32.25vh;"></div></div>
+        <div class="B2"><div class="pawns" id="bluepawn2" onclick="randomMove('blue',2)" style="background-color: rgb(2, 2, 161);box-shadow: inset 0 -4px 3px rgb(0, 0, 0, 0.2), inset 0 4px 3px rgba(255, 255, 255, 0.5); border: 0.5vh solid white; left:86.0vw; top: 42.25vh;"></div></div>
+    </div>
+        
+</div>
+
+
+<button class="musicBtn">
+    <img class = "muteBtn" onclick="playMusic()" src = "https://img.icons8.com/color/48/000000/mute.png">
+</button>
+
+<audio class="music" loop autoplay>
+   
+</audio>
+
+</body>
+</html>
