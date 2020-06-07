@@ -10,7 +10,6 @@ var clicked = false;
 var currpawn = "";
 var otherpawn = "";
 var allcolor = ["red", "blue"];
-let musicController = document.querySelector(".music");
 let rollSound = new Audio("ONEDICE.wav");
 let moveSound = new Audio("move.wav");
 let winSound = new Audio("win.mp3");
@@ -268,20 +267,3 @@ function randomMove(Color, paw) {
 }
 
 
-
-let musicBtn = document.querySelector(".musicBtn");
-
-function muteMusic()
-{
-	musicBtn.innerHTML = '<img class = "muteBtn" onclick="playMusic()" src = "https://img.icons8.com/color/48/000000/mute.png">';
-	musicController.pause();
-}
-
-function playMusic()
-{
-	musicBtn.innerHTML = '<img class = "muteBtn" onclick="muteMusic()" src = "https://img.icons8.com/color/48/000000/room-sound.png">';
-    musicController.innerHTML='<source src="faded.mp3">';
-	musicController.volume = 0.1;
-    musicController.play();
-    
-}
