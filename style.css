@@ -302,4 +302,23 @@ footer p {
     border: 1px solid #f3862d;
     height: 87px;
 }
+.musicBtn{
 
+	background-color: rgba(0,0,0,0);
+	border: none;
+	position: absolute;
+	z-index: 2;
+	top: 1vw;
+	right: 1vw;
+	outline: none;
+}
+
+.musicBtn img{
+    height: 40px;
+    width: 40px;
+}
+
+.musicBtn:hover{
+
+	cursor: pointer;
+}
