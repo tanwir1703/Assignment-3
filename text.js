@@ -23,7 +23,7 @@ function HaveHover() {
         for (var n = 1; n <= 2; n++) {
             var firstPawn = document.getElementById(allcolor[i] + "pawn" + n);
             var secondPawn=document.getElementById(currpawn);
-            if (firstPawn.style.top==secondPawn.style.top&&firstPawn.style.left==secondPawn.style.left&&currcolor!=allcolor[i]&&currPos+num<28) {
+            if (firstPawn.style.top==secondPawn.style.top&&firstPawn.style.left==secondPawn.style.left&&currcolor!=allcolor[i]&&currPos+num<27) {
                 count++;
                 toKill = allcolor[i] + "pawn" + n;
                 return toKill;
