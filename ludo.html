@@ -21,7 +21,7 @@ margin-right: 0px;">
 <div class="page">
 
     <div class="lockA">
-    <div class="textA">Locker For A</div>    
+    <div class="textA">A</div>    
     <div class="A1"><div class="pawns" id="redpawn1" onclick="randomMove('red',1)" style="background-color: rgb(190, 6, 6);box-shadow: inset 0 -4px 3px rgb(0, 0, 0, 0.2), inset 0 4px 3px rgba(255, 255, 255, 0.5); border: 0.5vh solid white; left:11.0vw; top: 32.25vh;"></div></div>
     <div class="A2"><div class="pawns" id="redpawn2" onclick="randomMove('red',2)" style="background-color: rgb(190, 6, 6);box-shadow: inset 0 -4px 3px rgb(0, 0, 0, 0.2), inset 0 4px 3px rgba(255, 255, 255, 0.5); border: 0.5vh solid white; left:11.0vw; top: 42.25vh;"></div></div>    
 </div>
@@ -63,12 +63,20 @@ margin-right: 0px;">
       </div>
       
       <div class="lockB">
-        <div class="textA">Locker For B</div> 
+        <div class="textA">B</div> 
         <div class="B1"><div class="pawns" id="bluepawn1" onclick="randomMove('blue',1)" style="background-color: rgb(2, 2, 161);box-shadow: inset 0 -4px 3px rgb(0, 0, 0, 0.2), inset 0 4px 3px rgba(255, 255, 255, 0.5); border: 0.5vh solid white; left:86.0vw; top: 32.25vh;"></div></div>
         <div class="B2"><div class="pawns" id="bluepawn2" onclick="randomMove('blue',2)" style="background-color: rgb(2, 2, 161);box-shadow: inset 0 -4px 3px rgb(0, 0, 0, 0.2), inset 0 4px 3px rgba(255, 255, 255, 0.5); border: 0.5vh solid white; left:86.0vw; top: 42.25vh;"></div></div>
     </div>
 
   </div>
+
+<button class="musicBtn">
+    <img class = "muteBtn" onclick="muteMusic()" src = "volume.png">
+</button>
+
+<audio class="music" loop autoplay>
+    <source src="Spectre.mp3" type="audio/mp3">
+</audio>
 
 
   </body>
